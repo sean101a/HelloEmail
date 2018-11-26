@@ -1,0 +1,8 @@
+trigger AccountLead on Lead (after insert) {
+    for (Lead newlead : Trigger.new) {
+        Account a = New Account();
+        a.Name    = newlead.LastName;
+        a.OwnerId = '0051U000000TlFQ';
+        insert a;
+    }
+}
