@@ -1,0 +1,10 @@
+@isTest
+private class ContactEmailTest {
+    
+    @isTest static void createContact() {
+        Contact myContact = new Contact();
+        myContact.LastName = 'Allen';
+        insert myContact;
+    }
+
+}

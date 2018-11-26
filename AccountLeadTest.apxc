@@ -1,0 +1,11 @@
+@isTest
+private class AccountLeadTest {
+	
+	@isTest static void createLead() {
+		Lead l = new Lead();
+		l.LastName = 'Allen';
+		l.Company  = 'DexYP';
+		insert l;
+	}
+
+}
